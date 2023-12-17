@@ -6,73 +6,73 @@
 ## **1. Business task** 
 Determine trends in smart device usage that could apply to Bellabeat customers to help influence Bellabeat's marketing strategy.
 
-● **What is the problem you are trying to solve?** 
+● **What is the problem you are trying to solve?** <br/>
 Analyze smart device data to determine trends to gain insight into how consumers use non-Bellabeat smart devices.
 
-● **How can your insights drive business decisions?** 
+● **How can your insights drive business decisions?** <br/>
 These insights can be used to make data-driven business strategies for growth opportunities.
 <br/>
 <br/>
 
-## **2. Description of all data sources used** 
+## **2. Description of all data sources used** <br/>
 The data being used has been made available by Möbius under CC0: Public Domain data license agreement: <https://creativecommons.org/publicdomain/zero/1.0/>. The time frame being analyzed is April 12, 2016 through May 12, 2016.
 
-**● Where is the data stored and located?** 
+**● Where is the data stored and located?** <br/>
 Data is broken up into 18 CSV files. All CSV files are on local PC and broken into daily, hourly and minute categories. Data is located on local Desktop that was obtained as .csv files from <https://www.kaggle.com/datasets/arashnic/fitbit>.
-The following datasets will be used for analysis:
-● sleepDay_merged
-● weightLogInfo_merged
-● dailyActivity_merged
+The following datasets will be used for analysis:<br/>
+● sleepDay_merged<br/>
+● weightLogInfo_merged<br/>
+● dailyActivity_merged<br/>
 
-**● How is the data organized?** 
+**● How is the data organized?** <br/>
 The data is organized into long format.
 
 **● Are there issues with bias or credibility in this data?** 
-The original data source can be confirmed, but it is missing some values which may be key to answering the question being asked by business. The data is not current and may no longer represent current trends.
+The original data source can be confirmed, but it is missing some values which may be key to answering the question being asked by business. The data is not current and may no longer represent current trends.<br/>
 
-**Reliability :** Dataset is reported to be collected from 30 individuals whose age and gender is not revealed. 30 individuals is also not a large enough data sample to rule out bias or provide decent fitness population representation. There are also values missing information such as calories or steps.
-**Originality :** Data was collected using third party platform Amazon Mechanical Turk.
-**Comprehensive :** The data contains daily, hourly and minute data on categories such as steps, calories, intensities and sleep.
-**Current :** Data is 7 years old and may no longer represent current patterns and trends.
-**Cited :** Original source is from directly from owner that collected data.
+**Reliability :** Dataset is reported to be collected from 30 individuals whose age and gender is not revealed. 30 individuals is also not a large enough data sample to rule out bias or provide decent fitness population representation. There are also values missing information such as calories or steps.<br/>
+**Originality :** Data was collected using third party platform Amazon Mechanical Turk.<br/>
+**Comprehensive :** The data contains daily, hourly and minute data on categories such as steps, calories, intensities and sleep.<br/>
+**Current :** Data is 7 years old and may no longer represent current patterns and trends.<br/>
+**Cited :** Original source is from directly from owner that collected data.<br/>
 
-**● How are you addressing licensing, privacy, security, and accessibility?** 
+**● How are you addressing licensing, privacy, security, and accessibility?** <br/>
 The data being used has been made available by Möbius under CC0: Public Domain data license agreement: <https://creativecommons.org/publicdomain/zero/1.0/> 
 
-**● How did you verify the data's integrity?** 
+**● How did you verify the data's integrity?** <br/>
 Due to the small dataset, I used Excel to review data provided.
 
-**● How does it help you answer your question?** 
+**● How does it help you answer your question?** <br/>
 It helps clarify the amount of data and also what data values may be missing.
 
-**● Are there any problems with the data?** 
+**● Are there any problems with the data?** <br/>
 Data values are missing from steps, calories, distance, etc. that will further limit it's accuracy.
 <br/>
 <br/>
 
 ## **3. Documentation of any cleaning or manipulation of data** 
-**● What tools are you choosing and why?** 
+**● What tools are you choosing and why?** <br/>
 Due to the small dataset I am using Excel 2016 to clean and manipulate data. From the 18 CSV files provided there were 3 datasets that provided unique daily information:
-● dailyActivity_merged contains 33 unique ID's 
-● weightLogInfo_merged contains 8 unique ID's 
-● sleepDay_merged contains 24 unique ID's 
+● dailyActivity_merged contains 33 unique ID's <br/>
+● weightLogInfo_merged contains 8 unique ID's <br/>
+● sleepDay_merged contains 24 unique ID's <br/>
 
 After reviewing weightLogInfo, due to it only having 8 unique ID's I have chosen to omit it from analysis as there is not enough data to capture unbiased trends that may be occurring.
 
-**● Have you ensured your data’s integrity?** 
+**● Have you ensured your data’s integrity?** <br/>
 Data integrity was reviewed for accuracy, completeness, consistency, and validity. Issues with data values have been documented.
 
-**● What steps have you taken to ensure that your data is clean?** 
-**1.** In Excel 2016 I used Find and Replace to replace all blank numeric values with NA.
-**2.** Created column called Weekday and used =WEEKDAY() to obtain the numeric equivalent of Sunday through Saturday. I then copied and pasted the column as values only to remove formula and used find and replace to change numeric values to the the individual days of the week (1=Sunday, 2=Monday, 3=Tuesday, 4=Wednesday, 5=Thursday, 6=Friday, 7=Saturday).
-**3.** I confirmed all values with no data had 0 indicated and were not left blank.
-**4.** The CSV file Data sleepDay_merged was copied and pasted into dailyActivity_merged CSV file. All blank numerica values were replaced with 0.
+**● What steps have you taken to ensure that your data is clean?** <br/>
+**1.** In Excel 2016 I used Find and Replace to replace all blank numeric values with NA.<br/>
+**2.** Created column called Weekday and used =WEEKDAY() to obtain the numeric equivalent of Sunday through Saturday. I then copied and pasted the column as values only to remove formula and used find and replace to change numeric values to the the individual days of the week (1=Sunday, 2=Monday, 3=Tuesday, 4=Wednesday, 5=Thursday, 6=Friday, 7=Saturday).<br/>
+**3.** I confirmed all values with no data had 0 indicated and were not left blank.<br/>
+**4.** The CSV file Data sleepDay_merged was copied and pasted into dailyActivity_merged CSV file. All blank numerica values were replaced with 0.<br/>
 **5.** File was saved as 041216_051216_wellness_clean.xls
 
-**● How can you verify that your data is clean and ready to analyze?** 
+**● How can you verify that your data is clean and ready to analyze?** <br/>
 Due to the small dataset, verification is able to be visually done by reviewing it in Excel 2016. Additionally using filter options in Excel also will confirm no missing or unusual data values.
 
-**● Have you documented your cleaning process so you can review and share those results?** 
+**● Have you documented your cleaning process so you can review and share those results?** <br/>
 The cleaning and analysis process has been documented in R Markdown.
 <br/>
 <br/>
@@ -96,32 +96,35 @@ The business questions being asked are how could the trends found apply to Bellb
 <br/>
 
 ## **5. Supporting visualizations and key findings** 
-**● Were you able to answer the business questions** 
+**● Were you able to answer the business questions** <br/>
 I was able to identify trends that can be used towards marketing strategies.
 
-**● What story does your data tell?** 
+**● What story does your data tell?** <br/>
 The 30 day data story shows that customers are doing the highest proportion of activities during the work week and saving the weekends to rest. The data also shows that the later afternoon was the most active time for activities and that April was a more active month than May.
 
-**● How do your findings relate to your original question?** 
+**● How do your findings relate to your original question?** <br/>
 The findings identify some trends with smart device usage that can be used for Bellabeat's marketing strategy.
 
-**● Who is your audience? What is the best way to communicate with them?** 
+**● Who is your audience? What is the best way to communicate with them?** <br/>
 The main audience is the marketing team and executive team.
 
-**● Can data visualization help you share your findings?** 
-Data Visualization is able to paint a picture that clearly identifies any trends or relationships that may be happening.\
+**● Can data visualization help you share your findings?** <br/>
+Data Visualization is able to paint a picture that clearly identifies any trends or relationships that may be happening.
 
-**● Is your presentation accessible to your audience?** 
+**● Is your presentation accessible to your audience?** <br/>
 Presentation is in a Tableau dashboard and story format, in addition to HTML.
 <br/>
-
+<br/>
+![](https://github.com/jmcs50/bellabeat_wellness/blob/main/Dashboard.png)
+<br/>
+<br/>
 The most popular time for smart device users to get active were on the late afternoon workdays between 6:00 PM and 7:00 PM followed by the lunch time period of 12 PM through 2 PM. Data also reinforced that the more active a user was the more calories they burned which also resulted in their sleep hours to become consistent and steady.
 <br/>
 <br/>
 
 ## **6. Top three recommendations** 
-Recommendations for marketing strategy:
-1. Activities and challenges that Bellabeat and new customers can complete using the Bellabeat app, Leaf or Time during peak active times.
-2. Market Bellabeat app, Leaf or Time towards working individuals who would be interested in also tracking their stress levels.
-3. Use of alerts and alarms to get users moving during sedentary periods.
-4. Reminders for users to go to sleep to maintain appropriate daily sleep needs.
+Recommendations for marketing strategy:<br/>
+1. Activities and challenges that Bellabeat and new customers can complete using the Bellabeat app, Leaf or Time during peak active times.<br/>
+2. Market Bellabeat app, Leaf or Time towards working individuals who would be interested in also tracking their stress levels.<br/>
+3. Use of alerts and alarms to get users moving during sedentary periods.<br/>
+4. Reminders for users to go to sleep to maintain appropriate daily sleep needs.<br/>
