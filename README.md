@@ -3,7 +3,7 @@
 ## What are some trends in smart device usage that could apply to Bellabeat customers to help influence Bellabeat's marketing strategy.
 
 
-#### **1. Business task** 
+## **1. Business task** 
 Determine trends in smart device usage that could apply to Bellabeat customers to help influence Bellabeat's marketing strategy.
 
 ● **What is the problem you are trying to solve?** 
@@ -11,9 +11,10 @@ Analyze smart device data to determine trends to gain insight into how consumers
 
 ● **How can your insights drive business decisions?** 
 These insights can be used to make data-driven business strategies for growth opportunities.
+<br/>
+<br/>
 
-
-#### **2. Description of all data sources used** 
+## **2. Description of all data sources used** 
 The data being used has been made available by Möbius under CC0: Public Domain data license agreement: <https://creativecommons.org/publicdomain/zero/1.0/>. The time frame being analyzed is April 12, 2016 through May 12, 2016.
 
 **● Where is the data stored and located?** 
@@ -46,9 +47,10 @@ It helps clarify the amount of data and also what data values may be missing.
 
 **● Are there any problems with the data?** 
 Data values are missing from steps, calories, distance, etc. that will further limit it's accuracy.
+<br/>
+<br/>
 
-
-#### **3. Documentation of any cleaning or manipulation of data** 
+## **3. Documentation of any cleaning or manipulation of data** 
 **● What tools are you choosing and why?** 
 Due to the small dataset I am using Excel 2016 to clean and manipulate data. From the 18 CSV files provided there were 3 datasets that provided unique daily information:
 ● dailyActivity_merged contains 33 unique ID's 
@@ -72,9 +74,10 @@ Due to the small dataset, verification is able to be visually done by reviewing 
 
 **● Have you documented your cleaning process so you can review and share those results?** 
 The cleaning and analysis process has been documented in R Markdown.
+<br/>
+<br/>
 
-
-#### **4. Summary of analysis** 
+## **4. Summary of analysis** 
 **● How should you organize your data to perform analysis on it?** 
 Data is combined and organized into columns.
 
@@ -89,9 +92,10 @@ Over the 30 day period analyzed the trend that was found is that the bulk of wal
 
 **● How will these insights help answer your business questions?**
 The business questions being asked are how could the trends found apply to Bellbeat customers and how to influence Bellabeat marketing strategy. While the insights found can lift the veil on how customers are using competitor products, an analysis of Bellabeat customers will still need to be done, to compare how non-Bellabeat customer and Bellabeat customers use their wellness products. From a marketing perspective the Bellabeat app, Leaf and Time products can be used to track activity, sleep and stress with the Bellabeat app providing some extra tracking services such as menstrual cycle and mindfulness habits.
+<br/>
+<br/>
 
-
-#### **5. Supporting visualizations and key findings** 
+## **5. Supporting visualizations and key findings** 
 **● Were you able to answer the business questions** 
 I was able to identify trends that can be used towards marketing strategies.
 
@@ -109,15 +113,15 @@ Data Visualization is able to paint a picture that clearly identifies any trends
 
 **● Is your presentation accessible to your audience?** 
 Presentation is in a Tableau dashboard and story format, in addition to HTML.
-
+<br/>
 
 The most popular time for smart device users to get active were on the late afternoon workdays between 6:00 PM and 7:00 PM followed by the lunch time period of 12 PM through 2 PM. Data also reinforced that the more active a user was the more calories they burned which also resulted in their sleep hours to become consistent and steady.
+<br/>
+<br/>
 
-
-#### **6. Top three recommendations** 
+## **6. Top three recommendations** 
 Recommendations for marketing strategy:
 1. Activities and challenges that Bellabeat and new customers can complete using the Bellabeat app, Leaf or Time during peak active times.
 2. Market Bellabeat app, Leaf or Time towards working individuals who would be interested in also tracking their stress levels.
 3. Use of alerts and alarms to get users moving during sedentary periods.
 4. Reminders for users to go to sleep to maintain appropriate daily sleep needs.
-\
